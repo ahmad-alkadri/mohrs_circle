@@ -39,6 +39,7 @@ p = figure(
     x_axis_label="stress",
     y_axis_label="shear",
     match_aspect=True,
+    sizing_mode='stretch_both',
     tools="pan,reset,save,wheel_zoom",
 )
 
