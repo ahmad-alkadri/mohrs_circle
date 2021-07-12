@@ -15,9 +15,9 @@ from user_funcs import mohr_c, c_array, X_Y
 st.title("Mohr's Circle App")
 
 # Make the sidebar with the inputs
-stress_x = st.sidebar.number_input("stress in x", value=2.0, step=0.1)
-stress_y = st.sidebar.number_input("stress in y", value=5.0, step=0.1)
-shear = st.sidebar.number_input("shear xy", value=4.0, step=0.1)
+stress_x = st.sidebar.number_input("stress in x", value=2.0, step=0.5)
+stress_y = st.sidebar.number_input("stress in y", value=5.0, step=0.5)
+shear = st.sidebar.number_input("shear xy", value=4.0, step=0.5)
 
 # find center and radius
 C, R = mohr_c(stress_x, stress_y, shear)
